@@ -17,6 +17,9 @@ namespace DipakWorldService1
         [OperationContract]
         int calculateDays(int day, int Month, int year);
 
+
+        [OperationContract]
+        int calculateAge(int day, int Month, int year);
         // TODO: Add your service operations here
     }
 

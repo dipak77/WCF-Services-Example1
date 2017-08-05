@@ -21,5 +21,15 @@ namespace DipakWorldService1
             int datetodays = DateTime.Now.Subtract(dt).Days;
             return datetodays;
         }
-    }
+
+        public int calculateAge(int day, int Month, int year)
+        {
+            var today = DateTime.Today;
+
+            var a = (today.Year * 100 + today.Month) * 100 + today.Day;
+            var b = (year * 100 + Month) * 100 + day;
+
+            return (a - b) / 10000;
+        }
+    };
 }
